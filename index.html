@@ -4,36 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tribute Page</title>
+    <title>To-do list</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <h1 class="title">Fiona Apple McAfee-Maggart</h1>
-        <p class="description">"Singer-Songwriter"</p>
-    </header>
-    <section class ="tribute">
-        <blockquote>
-            “Be kind to me, or treat me mean
-             I'll make the most of it, I'm an extraordinary machine”
-        </blockquote>
-        <img src="https://media.gettyimages.com/id/1051713120/photo/fiona-apple-portrait-on-rooftop-at-gramercy-park-new-york-14-may-1997.jpg?s=612x612&w=0&k=20&c=-SJGOJ944q62hUcQNr8CrU68_DnYReO3DbklPWlKg0M=" alt="Fiona">
-    </section>
-    <section class="bio">
-        <h2>Biography</h2>
-        <p>
-            A late-1990s overnight sensation, singer-songwriter and pianist Fiona Apple was cast as the antidote to packaged pop divettes like Britney Spears and Christina Aguilera. Considering her angst-ridden lyrics and her propensity to shock interviewers, some critics classed her among such provocateurs as Alanis Morissette and Sinéad O'Connor; others, listening to her jazz-tinged, full-throated, accomplished debut, compared her to Laura Nyro and Nina Simone.
-
-           Apple signed to Sony Music and released her debut album, Tidal at age 19. The lead single “Criminal” earned Apple a Grammy and a place in the Top Ten, partially due to its controversial music video.
-
-           Apple followed up in 1999 with When The Pawn…, whose full title is a 90-word poem inspired by negative feedback on her debut. Extraordinary Machine followed years after, though it experienced some delays.
-
-          The Idler Wheel… arrived after a seven-year period of tension and mystery. Its title, reminiscent of When the Pawn…, is a shortened version of a longer poem.
-
-          Eight years after The Idler Wheel…, Apple returned to the music scene with Fetch The Bolt Cutters, which was met with enthusiastic critical acclaim. The album’s title is from a quote from Gillian Anderson’s The Fall.  
-        </p>
-        <hr>
-
-    </section>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-Do list <img src="https://cdn.pixabay.com/photo/2017/01/31/11/48/checklist-2023731_1280.png" alt=""></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your text">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+                <!--<li class="checked">task1</li>
+                <li>task2</li>
+                <li>task3</li> -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
 </body>
 </html>
