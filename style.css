@@ -1,102 +1,53 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
 }
+
 .container{
     width: 100%;
-    min-height: 100vh;
-    background:linear-gradient(135deg, #5c6c90, #675772) ;
-    padding: 10px;
+    height: 100vh;
+    background: #e9ecac9c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.todo-app{
-    max-width: 548px;
-    width: 100%;
-    background: white;
-    margin: 100px auto 20px;
-    padding:40px 30px 70px ;
+.calculator{
+    background-color: rgba(177, 122, 34, 0.555);
+    padding: 30px;
     border-radius: 10px;
-
 }
-.todo-app h2{
-    color:black;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-.todo-app h2 img{
-    width: 30px;
-    margin-left: 10px;
-}
-.row{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: wheat;
-    border-radius: 30px;
-    padding-left: 20px;
-    margin-bottom: 25px;
-}
-input{
-    flex: 1;
-    border: none;
-    outline: none;
+.calculator form input{
+    border: 0;
+    outline: 1px;
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2) ;
     background: transparent;
-    padding: 10px;
-    font-weight: 14px;
-}
-button{
-    border:none;
-    outline: none;
-    background: orange;
-    color: wheat;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
-    border-radius: 30px;
-    padding:16px;
+    margin: 10px;
+    color: #fff;
 }
-ul li{
-    list-style: none;
-    cursor: pointer;
-    font-size: 18px;
-    user-select: none;
-    padding:13px 9px 13px 51px;
-    position: relative;
-}
-ul li::before{
-    content: '';
-    position: absolute;
-    height: 28px;
-    width:28px;
-    border-radius: 50%;
-    background-image: url(https://cdn.pixabay.com/photo/2016/08/25/07/30/orange-1618917_1280.png);
-    background-size: cover;
-    background-position: center;
-    top:12px;
-    left:8px;
-}
-ul li.checked{
-    color:#555;
-    text-decoration: line-through;
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+
 
 }
-ul li.checked::before{
-    background-image: url(https://cdn.pixabay.com/photo/2016/03/31/14/37/check-mark-1292787_1280.png);
-}
-ul li span{
-    position: absolute;
-    right: 0px;
-    top: 5px;
-    width: 40px;
-    height:40px;
-    font-size: 22px;
-    color: #555;
-    line-height: 40px;
-    text-align: center;
-    border-radius: circle;
-}
-ul li span:hover{
-    background: #edee;
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
 
+}
+form input.equal{
+    width: 144px;
+}
+form input.operator{
+    color: #1619199c;
 }
