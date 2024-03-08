@@ -4,48 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Tribute Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="calculator">
-            <form>
-                <div class="display">
-                    <input type="text" name="display">
-                </div>
-                <div>
-                    <input type="button" value="AC" onclick="display.value = ' '" class="operator">
-                    <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1) " class="operator">
-                    <input type="button" value="." onclick="display.value += '.'" class="operator">
-                    <input type="button" value="/" onclick="display.value += '/'" class="operator">
-                </div>
-                <div>
-                    <input type="button" value="7" onclick="display.value += '7'">
-                    <input type="button" value="8" onclick="display.value += '8'">
-                    <input type="button" value="9" onclick="display.value += '9'">
-                    <input type="button" value="*" onclick="display.value += '*'" class="operator">
-                </div>
-                <div>
-                    <input type="button" value="4" onclick="display.value += '4'">
-                    <input type="button" value="5" onclick="display.value += '5'">
-                    <input type="button" value="6" onclick="display.value += '6'">
-                    <input type="button" value="-" onclick="display.value += '-'" class="operator">
-                </div>
-                <div>
-                    <input type="button" value="1" onclick="display.value += '1'">
-                    <input type="button" value="2" onclick="display.value += '2'">
-                    <input type="button" value="3" onclick="display.value += '3'">
-                    <input type="button" value="+" onclick="display.value += '+'" class="operator">
-                </div>
-                <div>
-                    <input type="button" value="0" onclick="display.value += '0'">
-                    <input type="button" value="00" onclick="display.value += '00'">
-                    <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal operator">
-                
-                </div>
-            </form>
-        </div>
-    </div>
+    <header class="header">
+        <h1 class="title">Fiona Apple McAfee-Maggart</h1>
+        <p class="description">"Singer-Songwriter"</p>
+    </header>
+    <section class ="tribute">
+        <blockquote>
+            “Be kind to me, or treat me mean
+             I'll make the most of it, I'm an extraordinary machine”
+        </blockquote>
+        <img src="https://media.gettyimages.com/id/1051713120/photo/fiona-apple-portrait-on-rooftop-at-gramercy-park-new-york-14-may-1997.jpg?s=612x612&w=0&k=20&c=-SJGOJ944q62hUcQNr8CrU68_DnYReO3DbklPWlKg0M=" alt="Fiona">
+    </section>
+    <section class="bio">
+        <h2>Biography</h2>
+        <p>
+            A late-1990s overnight sensation, singer-songwriter and pianist Fiona Apple was cast as the antidote to packaged pop divettes like Britney Spears and Christina Aguilera. Considering her angst-ridden lyrics and her propensity to shock interviewers, some critics classed her among such provocateurs as Alanis Morissette and Sinéad O'Connor; others, listening to her jazz-tinged, full-throated, accomplished debut, compared her to Laura Nyro and Nina Simone.
+
+           Apple signed to Sony Music and released her debut album, Tidal at age 19. The lead single “Criminal” earned Apple a Grammy and a place in the Top Ten, partially due to its controversial music video.
+
+           Apple followed up in 1999 with When The Pawn…, whose full title is a 90-word poem inspired by negative feedback on her debut. Extraordinary Machine followed years after, though it experienced some delays.
+
+          The Idler Wheel… arrived after a seven-year period of tension and mystery. Its title, reminiscent of When the Pawn…, is a shortened version of a longer poem.
+
+          Eight years after The Idler Wheel…, Apple returned to the music scene with Fetch The Bolt Cutters, which was met with enthusiastic critical acclaim. The album’s title is from a quote from Gillian Anderson’s The Fall.  
+        </p>
+        <hr>
+
+    </section>
 </body>
 </html>
